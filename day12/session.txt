@@ -1,0 +1,9 @@
+-CSS psuedo properties 
+Hover
+Active
+Visited
+
+--Uses
+Selector : PsuedoPropertyName
+
+-Parent child nth element(element / even /odd)

@@ -1,0 +1,32 @@
+whats is rendering engine?
+what is global scope and block scope?
+what is copy by vaule (primmitives) and copy by references (array)?
+Why XMLHttpRequest, whats are the steps of XMLHttpRequest?
+Difference between spread operator and rest parameter. 
+role of 'this' keyword in object. (used in constructor, differentiates between field and parameter)
+what is role constructor in javascript? (special method)
+What is inheritance and how can we achive it in js? (mentions extends and super)
+
+
+#GitPassToken: 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
+
+Git Commands ************
+
+git init
+git remote add origin [gitLink]
+git remote -v
+git add .
+git commit -m "First commit"
+git branch -M main
+
+git push origin main
+
+
+in case for the first time
+git config user.name "someone"
+git config user.email "someone@someplace.com"
+
+git remote set-url origin - error in second stepl only
+
+******************************XXXX********************************
+

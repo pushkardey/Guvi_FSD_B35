@@ -1,0 +1,87 @@
+Difference between window, screen and document in javascript
+
+***** ---- Window Object in javascript ---- ******
+
+It represents the browser's window. All global JavaScript objects, functions, and variables automatically become members of the window object.
+Global variables are properties of the window object. Global functions are methods of the window object.
+
+The document property of the window object has the DOM document and associated nodes and methods that we can use to manipulate the DOM nodes 
+and listen to events for each node.
+
+Ref: 
+https://developer.mozilla.org/en-US/docs/Web/API/Window
+https://www.w3schools.com/jsref/obj_window.asp
+
+
+***** ---- Screen Object in javascript ---- ******
+
+The Screen interface represents a screen, usually the one on which the current window is being rendered, and is obtained using window.screen.
+
+Note that browsers determine which screen to report as current by detecting which screen has the center of the browser window.
+
+Example : 
+Screen.availHeight
+
+    Specifies the height of the screen, in pixels, minus permanent or semipermanent user interface features displayed by the operating system, such as the Taskbar on Windows.
+
+Screen.height
+
+    Returns the height of the screen in pixels.
+
+
+Ref:
+https://developer.mozilla.org/en-US/docs/Web/API/Screen
+
+
+***** ---- Document object in JavaScript ---- ******
+
+When an HTML document is loaded into a browser window, then it becomes a document object. 
+The document object stores the elements of an HTML document, such as HTML, HEAD, BODY, and other HTML tags as objects.
+The document object is the root node of the HTML document.
+The document object is a property of the window object.
+The document object is accessed with: window.document or just document
+
+Example :
+Document.children (Read only)
+
+    Returns the child elements of the current document.
+
+Ref: 
+https://www.w3schools.com/jsref/dom_obj_document.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+
+
+**********************************************----- Difference Between Window, Screen and Document -----************************************************************
+
+>> Window is the main JavaScript object root, aka the global object in a browser, and it can also be treated as the root of the document object model. 
+You can access it as window.
+
+>> window.screen or just screen is a small information object about physical screen dimensions.
+
+>> window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
+
+Since window is the global object, you can reference any properties of it with just the property name - so you do not have to write down window.
+- it will be figured out by the runtime.
+
+Difference between document and window:
+                                                                document                                                                                                               window
+
+It represents any HTML document or web page that is loaded in the browser.             --- It represents a browser window or frame that displays the contents of the webpage.   
+
+It is loaded inside the window.                                                                                        ---It is the very first object that is loaded in the browser.
+
+It is the object of window property.                                                                                  ---It is the object of the browser.
+
+All the tags, elements with attributes in HTML are part of the document.                       ---Global objects, functions, and variables of JavaScript are members of the window object.
+
+We can access the document from a window using the window. document                    ---We can access the window from the window only. i.e. window.window
+
+The document is part of BOM (browser object model) and dom (Document object model)      ---The window is part of BOM, not DOM.
+
+Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title ---Properties of the window object cannot be accessed by the document object.
+
+syntax:     document.propertyname;                                                                                  ---Syntax : window.propertyname;
+
+Ref: 
+https://www.geeksforgeeks.org/differences-between-document-and-window-objects/
+https://stackoverflow.com/questions/9895202/what-is-the-difference-between-window-screen-and-document-in-javascript

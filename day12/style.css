@@ -1,0 +1,36 @@
+div p{
+    background-color: black;
+    color: beige;
+}
+
+div h1{
+    color: aqua;
+}
+
+.heading{
+    background-color: aqua;
+}
+
+.h4style{
+    background-color: blueviolet;
+}
+
+ol{
+    background-color: lightgreen;
+}
+
+ol :nth-child(1){
+    color: red;
+}
+
+ol :nth-child(2){
+    color: blue;
+}
+
+ol :nth-child(3){
+    color: aqua;
+}
+
+ol :nth-child(4){
+    color: yellow;
+}
